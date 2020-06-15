@@ -2,6 +2,7 @@
 
 An instrumentation lib that aides in getting vital information from spark by
 injecting custom byte code
+This can help in deriving spark based pipeline leneages or gather DQ statistics evasively.
 
 1. To compile the jar:\
 `mvn package`
