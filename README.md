@@ -1,7 +1,7 @@
 # javaagent-instrumentation for spark
 
-A library, which also to instrument every method in the whitelisted class.\
-It will print to stdout method names, which takes more than 50 milliseconds to run.
+An instrumentation lib that aides in getting vital information from spark by
+injecting custom byte code
 
 1. To compile the jar:\
 `mvn package`
