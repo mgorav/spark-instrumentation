@@ -7,7 +7,7 @@ It will print to stdout method names, which takes more than 50 milliseconds to r
 `mvn package`
 
 1. To instrument the application add the following JVM option:\
-`-javaagent:java-instrumentation-1.0-SNAPSHOT.jar=classes.cfg`
+`-javaagent:spark-instrumentation-1.0-SNAPSHOT.jar=classes.cfg`
 
 1. Example of classes.cfg - every classname should be on a separate line\
 `org.apache.spark.api.java.JavaRDD`\
