@@ -15,7 +15,6 @@ It will print to stdout method names, which takes more than 50 milliseconds to r
 `org.apache.spark.executor.Executor`\
 `org.apache.spark.scheduler.TaskSetManager`\
 `org.apache.spark.scheduler.DAGScheduler`\
-
 ``
 
 1. Sample output:\
