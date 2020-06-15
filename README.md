@@ -25,7 +25,5 @@ It will print to stdout method names, which takes more than 50 milliseconds to r
  org.apache.spark.SparkContext.clean(java.lang.Object,boolean) : 247
  org.apache.spark.api.java.JavaRDD.filter(org.apache.spark.api.java.function.Function) : 52`
  
-1. How to know which classes to include?\
- I am using debugger to understand which classes needs to be instrumented.
  
   
