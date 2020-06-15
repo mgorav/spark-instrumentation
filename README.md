@@ -11,11 +11,16 @@ It will print to stdout method names, which takes more than 50 milliseconds to r
 
 1. Example of classes.cfg - every classname should be on a separate line\
 `org.apache.spark.api.java.JavaRDD`\
+`org.apache.spark.api.java.JavaRDD`\
 ``
 
 1. Sample output:\
-`Transforming: org/apache/spark/api/java/JavaRDD
- org.apache.spark.api.java.JavaRDD.filter(org.apache.spark.api.java.function.Function) : 55`
+`org.apache.spark.SparkContext.broadcast(java.lang.Object,scala.reflect.ClassTag) : 174
+ org.apache.spark.SparkContext.withScope(scala.Function0) : 1360
+ org.apache.spark.SparkContext.parallelize(scala.collection.Seq,int,scala.reflect.ClassTag) : 1363
+ Transforming: org/apache/spark/api/java/JavaRDD
+ org.apache.spark.SparkContext.clean(java.lang.Object,boolean) : 247
+ org.apache.spark.api.java.JavaRDD.filter(org.apache.spark.api.java.function.Function) : 52`
  
 1. How to know which classes to include?\
  I am using debugger to understand which classes needs to be instrumented.
