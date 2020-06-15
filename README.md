@@ -12,6 +12,10 @@ It will print to stdout method names, which takes more than 50 milliseconds to r
 1. Example of classes.cfg - every classname should be on a separate line\
 `org.apache.spark.api.java.JavaRDD`\
 `org.apache.spark.SparkContext`\
+`org.apache.spark.executor.Executor`\
+`org.apache.spark.scheduler.TaskSetManager`\
+`org.apache.spark.scheduler.DAGScheduler`\
+
 ``
 
 1. Sample output:\
