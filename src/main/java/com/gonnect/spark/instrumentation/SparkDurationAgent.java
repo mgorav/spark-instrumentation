@@ -13,11 +13,11 @@ public class SparkDurationAgent {
     private static final int MINIMAL_INVOCATION_TIME_MILLIS = 50;
 
     public static void premain(String agentArgs, Instrumentation inst) {
-        Set<String> whiteList = createWhitelist(agentArgs);
+        Set<String> whiteList = allowedClasses(agentArgs);
         inst.addTransformer(new SparkClassTransformer(whiteList::contains, SparkDurationAgent::registerTime));
     }
 
-    private static Set<String> createWhitelist(String agentArgs) {
+    private static Set<String> allowedClasses(String agentArgs) {
         if (agentArgs == null) {
             throw new IllegalArgumentException("Agent args can't be null.");
         }
